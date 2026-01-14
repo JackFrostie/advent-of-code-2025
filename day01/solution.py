@@ -29,5 +29,5 @@ if __name__ == "__main__":
                 counter += 1 + abs(int((rotation)/ring))
             else: # This is the case where we are going left or right but have not crossed zero at least once as a result of going left
                 counter += abs(int((rotation)/ring))
-        base = (base + code) % ring # This updates the current element to the correct one
+        base = (base + code) % ring # This updates the current element to the correct one after rotation
     print(f"Solution for part 2: {counter}")
